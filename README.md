@@ -20,19 +20,7 @@ Create a `.json` file in the root of your project: <br>
 []
 ```
 
-As early as possible in your application where your server is listening to a port import this package:
-
-```javascript
-const { serveApiDocs } = require('@sazzad/api-docs');
-```
-
-.. or using ES6?
-
-```typescript
-import { serveApiDocs } from '@sazzad/api-docs';
-```
-
-Now call the `serveApiDocs` function below of your routes declaration and just before your app listening function
+Now follow the code snippet to get the api-docs working on your express app.
 
 ```javascript
 const express = require('express');
