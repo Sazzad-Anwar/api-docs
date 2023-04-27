@@ -40,7 +40,7 @@ serveApiDocs(app, dir, 'production');
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 ```
 
-Or using ES6?
+Or using Typescript?
 
 ```typescript
 import express, { Express, Request, Response } from 'express';
