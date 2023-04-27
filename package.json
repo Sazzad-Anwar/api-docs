@@ -1,5 +1,5 @@
 {
-    "name": "@sazzad/api-docs",
+    "name": "api-docs",
     "version": "0.1.1",
     "description": "A nodejs module that will give you a postman like ui for api calls with the express app",
     "main": "build/index.js",
