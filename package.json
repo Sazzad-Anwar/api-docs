@@ -16,7 +16,7 @@
         "api-documentation"
     ],
     "author": "Mohammad Sazzad Bin Anwar <sazzadzihan@gmail.com>",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@types/express": "^4.17.17",
         "ts-node": "^10.9.1",
@@ -30,5 +30,13 @@
     },
     "files": [
         "build/**/*"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sazzad-Anwar/api-docs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Sazzad-Anwar/api-docs/issues"
+    },
+    "homepage": "https://github.com/Sazzad-Anwar/api-docs#readme"
 }
