@@ -24,7 +24,6 @@ const serveApiDocs = (app, jsonDirectory, env) => {
         let dir = path_1.default.join(__dirname, '../dist/config.json');
         let setUrl = {
             baseUrl: `${req.protocol}://${req.get('host')}`,
-            environment: env,
         };
         try {
             let data = yield promises_1.default.readFile(dir, { encoding: 'utf-8' });
@@ -56,12 +55,9 @@ const serveApiDocs = (app, jsonDirectory, env) => {
     app.get('/api-docs/api/collections', getApiCollections);
     app.post('/api-docs/api/collections', addApiCollections);
     app.put('/api-docs/api/collections', updateApiCollection);
-    app.use('/docs', serveBuildFolder);
-    app.use((req, res, next) => {
-        res.json({
-            message: 'route not found',
-        });
-        next();
+    app.get('/api-docs/api/env', (req, res) => {
+        res.json({ data: env });
     });
+    app.use('/docs', serveBuildFolder);
 };
 exports.serveApiDocs = serveApiDocs;

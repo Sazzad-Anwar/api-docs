@@ -1,0 +1,1 @@
+import{u as t,b as o,j as r}from"./index-8e74ae3b.js";function i({message:e}){t();const s=o();return r.jsx("div",{className:"flex justify-center items-center",children:e?r.jsx("pre",{className:"prose",children:e}):r.jsx("pre",{className:"prose",children:s.toString()})})}export{i as default};
