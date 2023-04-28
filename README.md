@@ -5,11 +5,11 @@ Api-docs is a module that will give you an interface for making api documentatio
 ## Install
 
 ```sh
-npm install @sazzad/api-docs
+npm install @sazzad-anwar/api-docs
 ```
 
-Or installing with yarn? `yarn add @sazzad/api-docs` <br>
-Or installing with pnpm? `pnpm add @sazzad/api-docs`
+Or installing with yarn? `yarn add @sazzad-anwar/api-docs` <br>
+Or installing with pnpm? `pnpm add @sazzad-anwar/api-docs`
 
 ## Usage
 
@@ -24,7 +24,7 @@ Now follow the code snippet to get the api-docs working on your express app.
 
 ```javascript
 const express = require('express');
-const { serveApiDocs } = require('@sazzad/api-docs');
+const { serveApiDocs } = require('@sazzad-anwar/api-docs');
 const cors = require('cors');
 const app = express();
 const path = require('path');
@@ -44,7 +44,7 @@ Or using Typescript?
 
 ```typescript
 import express, { Express, Request, Response } from 'express';
-import { serveApiDocs } from '@sazzad/api-docs';
+import { serveApiDocs } from '@sazzad-anwar/api-docs';
 import cors from 'cors';
 import path from 'path';
 
