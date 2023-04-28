@@ -28,9 +28,7 @@ const serveApiDocs = (app, jsonDirectory, env) => {
         };
         try {
             let data = yield promises_1.default.readFile(dir, { encoding: 'utf-8' });
-            if (JSON.parse(data).baseUrl === '') {
-                yield promises_1.default.writeFile(dir, JSON.stringify(setUrl));
-            }
+            yield promises_1.default.writeFile(dir, JSON.stringify(setUrl));
             next();
         }
         catch (error) {
