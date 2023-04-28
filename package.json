@@ -1,6 +1,6 @@
 {
     "name": "@sazzad-anwar/api-docs",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "A nodejs module that will give you a postman like ui for api calls with the express app",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -29,7 +29,8 @@
         "express": "^4.18.2"
     },
     "files": [
-        "build/**/*"
+        "build/**/*",
+        "dist/**/*"
     ],
     "repository": {
         "type": "git",

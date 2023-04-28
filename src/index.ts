@@ -19,10 +19,7 @@ export const serveApiDocs = (
         };
         try {
             let data = await fs.readFile(dir, { encoding: 'utf-8' });
-
-            if (JSON.parse(data).baseUrl === '') {
-                await fs.writeFile(dir, JSON.stringify(setUrl));
-            }
+            await fs.writeFile(dir, JSON.stringify(setUrl));
             next();
         } catch (error) {
             console.log(error);
