@@ -1,6 +1,6 @@
 {
     "name": "@sazzad-anwar/api-docs",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "A nodejs module that will give you a postman like ui for api calls with the express app",
     "main": "build/index.js",
     "types": "build/index.d.ts",
